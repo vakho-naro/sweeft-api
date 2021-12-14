@@ -1,0 +1,24 @@
+.user {
+    border: 1px solid #ccc;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.header img {
+    height: 200px;
+}
+
+.left-info {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.left-info span, .right-info span {
+    text-decoration: underline;
+    text-transform: capitalize;
+}
