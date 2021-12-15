@@ -1,6 +1,6 @@
 <div class="user">
     <div class="header">
-        <img src="http://placeimg.com/640/480/animals?v={{userId}}" alt="">
+        <img src="http://placeimg.com/640/480/animals?v={{userId}}" alt="{{user?.name}} {{user?.lastName}}">
         <fieldset class="left-info">
             <legend>Info</legend>
             <div>
@@ -54,7 +54,7 @@
             <div class="list">
                 <div class="list-item" *ngFor="let friend of friends; index as i">
                     <div class="list-item-content" (click)="onSelect(friend)">
-                        <img src="http://placeimg.com/640/480/animals?v={{friend.id}}" alt="sss">
+                        <img src="http://placeimg.com/640/480/animals?v={{friend.id}}" alt="{{friend.name}} {{friend.lastName}}">
                         <div class="list-item-content-description">
                             <strong>{{friend.prefix}} {{friend.name}} {{friend.lastName}}</strong>
                         </div>
