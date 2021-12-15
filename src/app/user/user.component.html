@@ -52,7 +52,7 @@
         <h2 style="margin-left: 10px;">Friends:</h2>
         <div class="users">
             <div class="list">
-                <div class="list-item" *ngFor="let friend of friends; index as i">
+                <div class="list-item" *ngFor="let friend of friends">
                     <div class="list-item-content" (click)="onSelect(friend)">
                         <img src="http://placeimg.com/640/480/animals?v={{friend.id}}" alt="{{friend.name}} {{friend.lastName}}">
                         <div class="list-item-content-description">

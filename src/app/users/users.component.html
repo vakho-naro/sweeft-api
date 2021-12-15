@@ -1,6 +1,6 @@
 <div class="users">
     <div class="list">
-        <div class="list-item" *ngFor="let user of users; index as i">
+        <div class="list-item" *ngFor="let user of users">
             <div class="list-item-content" (click)="onSelect(user)">
                 <img src="http://placeimg.com/640/480/animals?v={{user.id}}" alt="{{user.name}} {{user.lastName}}">
                 <div class="list-item-content-description">
